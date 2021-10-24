@@ -9,8 +9,9 @@ import SwiftUI
 
 struct MyReadingListView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Text("My Reading List")
+            .font(.headline)
+        Spacer()
     }
 }
 
