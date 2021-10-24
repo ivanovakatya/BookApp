@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FAB48ED42725AEC000D52C26 /* MyReadingListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB48ED32725AEC000D52C26 /* MyReadingListApp.swift */; };
-		FAB48ED62725AEC000D52C26 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB48ED52725AEC000D52C26 /* ContentView.swift */; };
+		FAB48ED62725AEC000D52C26 /* MyReadingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB48ED52725AEC000D52C26 /* MyReadingListView.swift */; };
 		FAB48ED82725AEC200D52C26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB48ED72725AEC200D52C26 /* Assets.xcassets */; };
 		FAB48EDB2725AEC200D52C26 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB48EDA2725AEC200D52C26 /* Preview Assets.xcassets */; };
 		FAB48EE52725AEC300D52C26 /* MyReadingListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB48EE42725AEC300D52C26 /* MyReadingListTests.swift */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		FAB48ED02725AEC000D52C26 /* MyReadingList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyReadingList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB48ED32725AEC000D52C26 /* MyReadingListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReadingListApp.swift; sourceTree = "<group>"; };
-		FAB48ED52725AEC000D52C26 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FAB48ED52725AEC000D52C26 /* MyReadingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReadingListView.swift; sourceTree = "<group>"; };
 		FAB48ED72725AEC200D52C26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAB48EDA2725AEC200D52C26 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FAB48EE02725AEC300D52C26 /* MyReadingListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyReadingListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,7 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				FAB48ED32725AEC000D52C26 /* MyReadingListApp.swift */,
-				FAB48ED52725AEC000D52C26 /* ContentView.swift */,
+				FAB48ED52725AEC000D52C26 /* MyReadingListView.swift */,
 				FAB48ED72725AEC200D52C26 /* Assets.xcassets */,
 				FAB48ED92725AEC200D52C26 /* Preview Content */,
 			);
@@ -257,7 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAB48ED62725AEC000D52C26 /* ContentView.swift in Sources */,
+				FAB48ED62725AEC000D52C26 /* MyReadingListView.swift in Sources */,
 				FAB48ED42725AEC000D52C26 /* MyReadingListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
