@@ -16,8 +16,10 @@ struct MyReadingListView: View {
         
         List {
             HStack{
-                Button("+"){
+                Button {
                     //do nothing for now
+                } label: {
+                    Image(systemName: "plus.circle")
                 }
                 Text("Add a book")
             }
