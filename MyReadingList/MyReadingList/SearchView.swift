@@ -9,7 +9,9 @@ import SwiftUI
 
 struct SearchView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(NSLocalizedString("ui.SearchView.title", value: "Search Screen", comment: "title for the Search screen"))
+            .font(.headline)
+        Spacer()
     }
 }
 
