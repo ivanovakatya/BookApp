@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FAB051182737230A0096651F /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB051172737230A0096651F /* SearchView.swift */; };
 		FAB48ED42725AEC000D52C26 /* MyReadingListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB48ED32725AEC000D52C26 /* MyReadingListApp.swift */; };
 		FAB48ED62725AEC000D52C26 /* MyReadingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB48ED52725AEC000D52C26 /* MyReadingListView.swift */; };
 		FAB48ED82725AEC200D52C26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB48ED72725AEC200D52C26 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FAB051172737230A0096651F /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		FAB48ED02725AEC000D52C26 /* MyReadingList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyReadingList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB48ED32725AEC000D52C26 /* MyReadingListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReadingListApp.swift; sourceTree = "<group>"; };
 		FAB48ED52725AEC000D52C26 /* MyReadingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReadingListView.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			children = (
 				FAB48ED32725AEC000D52C26 /* MyReadingListApp.swift */,
 				FAB48ED52725AEC000D52C26 /* MyReadingListView.swift */,
+				FAB051172737230A0096651F /* SearchView.swift */,
 				FAB48ED72725AEC200D52C26 /* Assets.xcassets */,
 				FAB48ED92725AEC200D52C26 /* Preview Content */,
 			);
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAB48ED62725AEC000D52C26 /* MyReadingListView.swift in Sources */,
+				FAB051182737230A0096651F /* SearchView.swift in Sources */,
 				FAB48ED42725AEC000D52C26 /* MyReadingListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
