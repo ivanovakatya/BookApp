@@ -21,7 +21,7 @@ struct MyReadingListView: View {
                 } label: {
                     Image(systemName: "plus.circle")
                 }
-                Text("Add a book")
+                Text(NSLocalizedString("ui.myReadingList.addABook.button", value: "Add a book", comment: "Add a Book button in MyReadingList screen"))
             }
         }
     }
