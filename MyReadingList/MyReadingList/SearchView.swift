@@ -9,9 +9,11 @@ import SwiftUI
 
 struct SearchView: View {
     var body: some View {
-        Text(NSLocalizedString("ui.search.title", value: "Search", comment: "title for the Search screen"))
-            .font(.headline)
-        Spacer()
+        VStack{
+            Text(NSLocalizedString("ui.search.title", value: "Search", comment: "title for the Search screen"))
+                .font(.headline)
+            Spacer()
+        }
     }
 }
 
