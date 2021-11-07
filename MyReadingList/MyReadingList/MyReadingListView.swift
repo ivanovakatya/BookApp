@@ -10,18 +10,20 @@ import SwiftUI
 
 struct MyReadingListView: View {
     var body: some View {
-        Text(NSLocalizedString("ui.myReadingList.title", value: "My Reading List", comment: "title for the MyReadingList screen"))
-            .font(.headline)
-        Spacer()
-        
-        List {
-            HStack{
-                Button {
-                    //do nothing for now
-                } label: {
-                    Image(systemName: "plus.circle")
+        VStack {
+            Text(NSLocalizedString("ui.myReadingList.title", value: "My Reading List", comment: "title for the MyReadingList screen"))
+                .font(.headline)
+            Spacer()
+            
+            List {
+                HStack{
+                    Button {
+                        //do nothing for now
+                    } label: {
+                        Image(systemName: "plus.circle")
+                    }
+                    Text(NSLocalizedString("ui.myReadingList.addABook.button", value: "Add a book", comment: "Add a Book button in MyReadingList screen"))
                 }
-                Text(NSLocalizedString("ui.myReadingList.addABook.button", value: "Add a book", comment: "Add a Book button in MyReadingList screen"))
             }
         }
     }
