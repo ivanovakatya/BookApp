@@ -10,12 +10,8 @@ import SwiftUI
 
 struct MyReadingListView: View {
     var body: some View {
-        VStack {
-            Text(NSLocalizedString("ui.myReadingList.title", value: "My Reading List", comment: "title for the MyReadingList screen"))
-                .font(.headline)
-            Spacer()
-            
-            NavigationView {
+        NavigationView {
+            VStack {
                 List {
                     HStack{
                         NavigationLink {
@@ -26,7 +22,7 @@ struct MyReadingListView: View {
                         }
                     }
                 }
-            }
+            }.navigationTitle(NSLocalizedString("ui.myReadingList.title", value: "My Reading List", comment: "title for the MyReadingList screen"))
         }
     }
 }
