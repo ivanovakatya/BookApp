@@ -11,10 +11,8 @@ struct SearchView: View {
     var body: some View {
         NavigationView{
             VStack{
-                Text(NSLocalizedString("ui.search.title", value: "Search", comment: "title for the Search screen"))
-                .font(.headline)
-                Spacer()
-            }
+                // plaseholder 
+            }.navigationTitle(NSLocalizedString("ui.search.title", value: "Search", comment: "title for the Search screen"))
         }
     }
 }
