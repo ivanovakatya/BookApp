@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct SearchView: View {
+    @State private var searchText = ""
+
     var body: some View {
         NavigationView{
             VStack{
-                // plaseholder 
+                Text("")
+                .searchable(text: $searchText, prompt: "Search for a book")
             }.navigationTitle(NSLocalizedString("ui.search.title", value: "Search", comment: "title for the Search screen"))
         }
     }
