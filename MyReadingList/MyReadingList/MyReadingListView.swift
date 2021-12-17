@@ -11,8 +11,8 @@ import SwiftUI
 struct MyReadingListView: View {
     var body: some View {
         NavigationView {
-            HStack {
-                List {
+            List {
+                HStack {
                     NavigationLink {
                         SearchView()
                     } label: {
