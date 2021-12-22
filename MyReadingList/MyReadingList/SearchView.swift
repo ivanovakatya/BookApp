@@ -10,10 +10,8 @@ import SwiftUI
 struct SearchView: View {
     var body: some View {
         VStack{
-            Text(NSLocalizedString("ui.search.title", value: "Search", comment: "title for the Search screen"))
-                .font(.headline)
-            Spacer()
-        }
+            // placeholder
+        }.navigationTitle(NSLocalizedString("ui.search.title", value: "Search", comment: "title for the Search screen"))
     }
 }
 
