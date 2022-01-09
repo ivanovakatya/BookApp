@@ -9,5 +9,8 @@ import Foundation
 import XCTest
 
 class BaseTestClass: XCTestCase {
-    
+    override init() {
+        super.init()
+        XCUIApplication().launch()
+    }
 }
