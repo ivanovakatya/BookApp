@@ -17,6 +17,7 @@
 		FAB48EE52725AEC300D52C26 /* MyReadingListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB48EE42725AEC300D52C26 /* MyReadingListTests.swift */; };
 		FAB48EEF2725AEC300D52C26 /* MyReadingListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB48EEE2725AEC300D52C26 /* MyReadingListUITests.swift */; };
 		FAB48EF12725AEC300D52C26 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB48EF02725AEC300D52C26 /* HomeScreen.swift */; };
+		FABB3A6027923DD3002B42C9 /* SearchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB3A5F27923DD3002B42C9 /* SearchScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		FAB48EEA2725AEC300D52C26 /* MyReadingListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyReadingListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB48EEE2725AEC300D52C26 /* MyReadingListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReadingListUITests.swift; sourceTree = "<group>"; };
 		FAB48EF02725AEC300D52C26 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		FABB3A5F27923DD3002B42C9 /* SearchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +132,6 @@
 			children = (
 				FABB3A5E27923725002B42C9 /* Page Objects */,
 				FAB48EEE2725AEC300D52C26 /* MyReadingListUITests.swift */,
-				FAB48EF02725AEC300D52C26 /* HomeScreen.swift */,
 				FA4F5E762787A5D100E792D7 /* BaseTestFile.swift */,
 			);
 			path = MyReadingListUITests;
@@ -140,6 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				FA332281278DD14F00D00D53 /* Page.swift */,
+				FAB48EF02725AEC300D52C26 /* HomeScreen.swift */,
+				FABB3A5F27923DD3002B42C9 /* SearchScreen.swift */,
 			);
 			path = "Page Objects";
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAB48EEF2725AEC300D52C26 /* MyReadingListUITests.swift in Sources */,
+				FABB3A6027923DD3002B42C9 /* SearchScreen.swift in Sources */,
 				FAB48EF12725AEC300D52C26 /* HomeScreen.swift in Sources */,
 				FA332282278DD14F00D00D53 /* Page.swift in Sources */,
 				FA4F5E772787A5D100E792D7 /* BaseTestFile.swift in Sources */,
