@@ -1,5 +1,5 @@
 //
-//  MyReadingListUITests.swift
+//  HomeScreenTests.swift
 //  MyReadingListUITests
 //
 //  Created by MacBook on 24/10/2021.
