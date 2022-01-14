@@ -7,7 +7,7 @@
 
 import XCTest
 
-class MyReadingListUITestsLaunchTests: XCTestCase {
+class HomeScreen: XCTestCase {
 
    
 }
