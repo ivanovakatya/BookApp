@@ -8,8 +8,8 @@
 import XCTest
 import MyReadingList
 
-class MyReadingListUITests: BaseTestClass {
-    let homeScreen = MyReadingListUITestsLaunchTests()
+class HomeScreenTests: BaseTestClass {
+    let homeScreen = HomeScreen()
     
     func testWhenAddABookButtonIsPressedSearchScreenIsOpen() {
         //Given: I am on the MyReadingListView screen (assert navigation title + button exist)
