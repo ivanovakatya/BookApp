@@ -14,7 +14,7 @@ class SearchScreen: Page {
         app = XCUIApplication()
     }
 
-    var back: XCUIElement {
+    var backButton: XCUIElement {
         return app.navigationBars.buttons.element(boundBy: 0)
     }
     

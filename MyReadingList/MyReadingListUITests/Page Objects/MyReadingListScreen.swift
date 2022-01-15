@@ -7,7 +7,7 @@
 
 import XCTest
 
-class HomeScreen: Page {
+class MyReadingListScreen: Page {
     var app: XCUIApplication
 
     init() {
@@ -15,15 +15,11 @@ class HomeScreen: Page {
     }
 
     func isDisplayed() -> Bool {
-        return label.exists
+        return addBookButton.exists
     }
 
-    var label: XCUIElement {
+    var addBookButton: XCUIElement {
         return app.staticTexts["add-book-button"].firstMatch
-    }
-    
-    var back: XCUIElement {
-        return app.navigationBars.buttons.element(boundBy: 0)
     }
     
     var homePageTitle: XCUIElement {
@@ -35,7 +31,7 @@ class HomeScreen: Page {
     }
     
     func goToSearchScreen() -> SearchScreen {
-        self.label.tap()
+        self.addBookButton.tap()
         return SearchScreen()
     }
 }
