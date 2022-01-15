@@ -22,6 +22,18 @@ class HomeScreen: Page {
         return app.staticTexts["add-book-button"].firstMatch
     }
     
+    var back: XCUIElement {
+        return app.navigationBars.buttons.element(boundBy: 0)
+    }
+    
+    var homePageTitle: XCUIElement {
+        return app.navigationBars["My Reading List"].firstMatch
+    }
+    
+    var navbar: XCUIElement {
+        return app.navigationBars.firstMatch
+    }
+    
     func goToSearchScreen() -> SearchScreen {
         self.label.tap()
         return SearchScreen()

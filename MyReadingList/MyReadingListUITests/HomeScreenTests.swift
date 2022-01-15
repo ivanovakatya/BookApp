@@ -15,6 +15,7 @@ class HomeScreenTests: BaseTestFile{
         //Given: I am on the MyReadingListView screen (assert navigation title + button exist)
         XCTAssertTrue(homeScreen.isDisplayed())
         XCTAssertEqual(homeScreen.label.label, "Add a book")
+        XCTAssertTrue(homeScreen.homePageTitle.exists)
         //When: I click on 'Add Book' button
         let searchScreen = homeScreen.goToSearchScreen()
         
