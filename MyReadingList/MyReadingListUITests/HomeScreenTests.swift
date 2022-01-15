@@ -16,10 +16,11 @@ class HomeScreenTests: BaseTestFile{
         XCTAssertTrue(homeScreen.isDisplayed())
         XCTAssertEqual(homeScreen.label.label, "Add a book")
         //When: I click on 'Add Book' button
-        
+        let searchScreen = homeScreen.goToSearchScreen()
         
         //Then: I should be on the search screen, with the title, 'My ReadingList' back button and field showing
-        
+        XCTAssertEqual(searchScreen.back.label, "My Reading List")
+        XCTAssertTrue(searchScreen.searchTitle.exists)
     }
     
 }
