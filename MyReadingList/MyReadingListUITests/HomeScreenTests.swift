@@ -8,7 +8,7 @@
 import XCTest
 import MyReadingList
 
-class HomeScreenTests: BaseTestClass {
+class HomeScreenTests: BaseTestFile{
     let homeScreen = HomeScreen()
     
     func testWhenAddABookButtonIsPressedSearchScreenIsOpen() {
@@ -16,9 +16,10 @@ class HomeScreenTests: BaseTestClass {
         XCTAssertTrue(homeScreen.isDisplayed())
         XCTAssertEqual(homeScreen.label.label, "Add a book")
         //When: I click on 'Add Book' button
-        homeScreen.button.tap()
+        
+        
         //Then: I should be on the search screen, with the title, 'My ReadingList' back button and field showing
-        XCTAssertEqual(homeScreen.label.label, "My ReadingList")
+        
     }
     
 }

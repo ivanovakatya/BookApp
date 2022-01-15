@@ -7,8 +7,7 @@
 
 import XCTest
 
-class HomeScreen: XCTestCase {
-
+class HomeScreen: Page {
     var app: XCUIApplication
 
     init() {
@@ -20,7 +19,7 @@ class HomeScreen: XCTestCase {
     }
 
     var label: XCUIElement {
-        return app.staticTexts["add-book-label"].firstMatch
+        return app.staticTexts["add-book-button"].firstMatch
     }
     
     func goToSearchScreen() -> SearchScreen {

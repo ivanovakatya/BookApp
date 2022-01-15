@@ -8,9 +8,9 @@
 import Foundation
 import XCTest
 
-class BaseTestClass: XCTestCase {
-    override init() {
-        super.init()
+class BaseTestFile: XCTestCase {
+    override class func setUp()  {
+        super.setUp()
         XCUIApplication().launch()
     }
 }
