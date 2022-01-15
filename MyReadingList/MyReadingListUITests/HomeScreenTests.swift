@@ -14,8 +14,9 @@ class HomeScreenTests: BaseTestFile{
     func testWhenAddABookButtonIsPressedSearchScreenIsOpen() {
         //Given: I am on the MyReadingListView screen (assert navigation title + button exist)
         XCTAssertTrue(homeScreen.isDisplayed())
-        XCTAssertEqual(homeScreen.label.label, "Add a book")
         XCTAssertTrue(homeScreen.homePageTitle.exists)
+        XCTAssertEqual(homeScreen.label.label, "Add a book")
+        
         //When: I click on 'Add Book' button
         let searchScreen = homeScreen.goToSearchScreen()
         
@@ -23,5 +24,4 @@ class HomeScreenTests: BaseTestFile{
         XCTAssertEqual(searchScreen.back.label, "My Reading List")
         XCTAssertTrue(searchScreen.searchTitle.exists)
     }
-    
 }
