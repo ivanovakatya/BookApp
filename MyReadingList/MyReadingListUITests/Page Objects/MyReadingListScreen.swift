@@ -22,7 +22,7 @@ class MyReadingListScreen: Page {
         return app.staticTexts["add-book-button"].firstMatch
     }
     
-    var homePageTitle: XCUIElement {
+    var pageTitle: XCUIElement {
         return app.navigationBars["My Reading List"].firstMatch
     }
     

@@ -18,7 +18,7 @@ class SearchScreen: Page {
         return app.navigationBars.buttons.element(boundBy: 0)
     }
     
-    var searchTitle: XCUIElement {
+    var pageTitle: XCUIElement {
         return app.navigationBars["Search"].firstMatch
     }
     

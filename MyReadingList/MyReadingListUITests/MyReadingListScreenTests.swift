@@ -9,19 +9,19 @@ import XCTest
 import MyReadingList
 
 class MyReadingListScreenTests: BaseTestFile {
-    let homeScreen = MyReadingListScreen()
+    let myReadingListScreen = MyReadingListScreen()
     
     func testWhenAddABookButtonIsPressedSearchScreenIsOpen() {
-        //Given: User is on the MyReadingListView screen (assert navigation title + button exist)
-        XCTAssertTrue(homeScreen.isDisplayed())
-        XCTAssertTrue(homeScreen.homePageTitle.exists)
-        XCTAssertEqual(homeScreen.addBookButton.label, "Add a book")
+        // Given: User is on the MyReadingListView screen (assert navigation title + button exist)
+        XCTAssertTrue(myReadingListScreen.isDisplayed())
+        XCTAssertTrue(myReadingListScreen.pageTitle.exists)
+        XCTAssertEqual(myReadingListScreen.addBookButton.label, "Add a book")
         
-        //When: User clicks on 'Add Book' button
-        let searchScreen = homeScreen.goToSearchScreen()
+        // When: User taps on 'Add Book' button
+        let searchScreen = myReadingListScreen.goToSearchScreen()
         
-        //Then: User should be on the search screen, with the title, 'My ReadingList' back button and field showing
-        XCTAssertEqual(searchScreen.backButton.label, "My Reading List")
-        XCTAssertTrue(searchScreen.searchTitle.exists)
+        // Then: User should be on the search screen, with back button and title
+        XCTAssertTrue(searchScreen.backButton.exists)
+        XCTAssertTrue(searchScreen.pageTitle.exists)
     }
 }
