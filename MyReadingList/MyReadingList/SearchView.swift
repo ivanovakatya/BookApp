@@ -14,6 +14,7 @@ struct SearchView: View {
         VStack{
             Text("")
                 .searchable(text: $searchText, prompt: "Search for a book")
+                .accessibility(identifier: "search-book-button")
         }.navigationTitle(NSLocalizedString("ui.search.title", value: "Search", comment: "title for the Search screen"))
     }
 }
