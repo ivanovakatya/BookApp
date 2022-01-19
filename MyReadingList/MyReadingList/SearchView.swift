@@ -8,14 +8,19 @@
 import SwiftUI
 
 struct SearchView: View {
+    @Environment(\.dismissSearch) var dismissSearch
     @State private var searchText = ""
     
     var body: some View {
         VStack{
             Text("")
-                .searchable(text: $searchText, prompt: "Search for a book")
                 .accessibility(identifier: "search-book-button")
-        }.navigationTitle(NSLocalizedString("ui.search.title", value: "Search", comment: "title for the Search screen"))
+        }
+        .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search for a book")
+        .navigationTitle(NSLocalizedString("ui.search.title", value: "Search", comment: "title for the Search screen"))
+        .onSubmit(of: .search) {
+            dismissSearch()
+        }
     }
 }
 

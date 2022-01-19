@@ -10,4 +10,8 @@ import MyReadingList
 
 class SearchScreenTests: BaseTestFile {
     let myReadingListScreen = SearchScreen()
+    
+    func testSearchableFieldForSerarchingBookWorks() {
+        
+    }
 }
