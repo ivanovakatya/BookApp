@@ -7,10 +7,11 @@
 
 import SwiftUI
 
+
 struct SearchView: View {
     @Environment(\.dismissSearch) var dismissSearch
     @State private var searchText = ""
-    
+
     var body: some View {
         VStack{
             Text("")
