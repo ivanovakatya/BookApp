@@ -17,11 +17,11 @@ class SearchScreenTests: BaseTestFile {
         XCTAssertTrue(searchScreen.backButton.exists) // back button exsits
         XCTAssertTrue(searchScreen.pageTitle.exists) // title exists
         XCTAssertTrue(searchScreen.searchBookField.exists) // search field with correct text exists
-
+        
         //When: User selects the search bar and types some text
         searchScreen.searchBar.tap()
         searchScreen.searchBar.typeText("Harry Potter")
-
+        
         guard let value = searchScreen.searchBar.value as? String else {
             return XCTFail("Failed to type in search bar")
         }
@@ -29,14 +29,14 @@ class SearchScreenTests: BaseTestFile {
         // Then: The text should be reflect in the searchbar
         XCTAssertEqual(value, "Harry Potter")
     }
-        
+    
     func testCancellingSearchClearsSearchBar() {
         let searchScreen = Routes.WhenUserGoesToSearchScreen()
-
+        
         //Given: User selects the search bar and types some text
         searchScreen.searchBar.tap()
         searchScreen.searchBar.typeText("Harry")
-
+        
         guard let value = searchScreen.searchBar.value as? String else {
             return XCTFail("Failed to type in search bar")
         }
@@ -46,5 +46,5 @@ class SearchScreenTests: BaseTestFile {
         //Then: When the user tap on the 'Cancel' button the search view should be dismiss (button label matches)
         XCTAssertTrue(searchScreen.label.exists)
         searchScreen.button.tap()
-            }
+    }
 }

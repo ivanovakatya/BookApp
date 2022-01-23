@@ -16,7 +16,6 @@ struct SearchView: View {
         SearchBody()
             .navigationTitle(NSLocalizedString("ui.search.title", value: "Search", comment: "title for the Search screen"))
             .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search for a book")
-            .accessibility(identifier: "search-book-button")
     }
 }
 
