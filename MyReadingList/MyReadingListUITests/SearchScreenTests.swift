@@ -12,7 +12,6 @@ class SearchScreenTests: BaseTestFile {
     let myReadingListScreen = SearchScreen()
     
     func testSearchableFieldForSerarchingBookWorks() {
-        //All fields exsit and user is able to type text in the search field
         //    Given: User is on the Search screen (assert navigation title 'Search' + search button exist)
         //    When: User taps on ‘Search for a book’ field
         //    Then: User should be able to type in the field
