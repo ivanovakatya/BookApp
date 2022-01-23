@@ -13,18 +13,32 @@ class SearchScreen: Page {
     init() {
         app = XCUIApplication()
     }
-    var pageTitle: XCUIElement {
-        return app.navigationBars["Search"].firstMatch
-    }
-    func isDisplayed() -> Bool {
-        return searchBookField.exists
-    }
-
-    var searchBookField: XCUIElement {
-        return app.searchFields["search-book-button"].firstMatch
-    }
     
     var backButton: XCUIElement {
         return app.navigationBars.buttons.element(boundBy: 0)
+    }
+    
+    var pageTitle: XCUIElement {
+        return app.navigationBars["Search"].firstMatch
+    }
+    
+    var searchBookField: XCUIElement {
+        return app.searchFields["Search for a book"].firstMatch
+    }
+    
+    var navbar: XCUIElement {
+        return app.navigationBars.firstMatch
+    }
+    
+    var searchBar: XCUIElement {
+        return navbar.searchFields.firstMatch
+    }
+
+    var label: XCUIElement {
+        return app.staticTexts["Cancel"].firstMatch
+    }
+
+    var button: XCUIElement {
+        return app.buttons["Cancel"]
     }
 }

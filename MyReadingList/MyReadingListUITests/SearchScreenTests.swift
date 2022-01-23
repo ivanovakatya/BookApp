@@ -9,27 +9,42 @@ import XCTest
 import MyReadingList
 
 class SearchScreenTests: BaseTestFile {
-    let searchScreen = SearchScreen()
     
-    func testSearchableFieldForSerarchingBookWorks() {
-        //Given: User is on Search screen
+    func testSearchableFieldForSerarchingBook() {
+        let searchScreen = Routes.WhenUserGoesToSearchScreen()
+        
+        //Given: User is on Search screen (Assert all elements exist)
+        XCTAssertTrue(searchScreen.backButton.exists) // back button exsits
         XCTAssertTrue(searchScreen.pageTitle.exists) // title exists
-        XCTAssertTrue(searchScreen.isDisplayed()) // search field exists
-        XCTAssertEqual(searchScreen.searchBookField.label, "Search for a book") // the field machess
+        XCTAssertTrue(searchScreen.searchBookField.exists) // search field with correct text exists
 
-        //    Given: User is on the Search screen (assert navigation title 'Search' + search button exist)
-        //    When: User taps on ‘Search for a book’ field
-        //    Then: User should be able to type in the field
-        //    And: User should see the ‘Cancel’ button
+        //When: User selects the search bar and types some text
+        searchScreen.searchBar.tap()
+        searchScreen.searchBar.typeText("Harry Potter")
+
+        guard let value = searchScreen.searchBar.value as? String else {
+            return XCTFail("Failed to type in search bar")
+        }
         
-        //User is able to 'Cancel' text in the search field
-        //    Given: User is typing text in the search field
-        //    And: User taps on the 'Cancel' button
-        //    Then: User should be taken to the previous view
-        
-        //User dismiss the search field when press "Enter"
-        //    Given: User is typing text in the search field
-        //    When: User taps on ‘Enter’ button
-        //    Then:  User should be able to dismiss this view (for now)
+        // Then: The text should be reflect in the searchbar
+        XCTAssertEqual(value, "Harry Potter")
     }
+        
+    func testCancellingSearchClearsSearchBar() {
+        let searchScreen = Routes.WhenUserGoesToSearchScreen()
+
+        //Given: User selects the search bar and types some text
+        searchScreen.searchBar.tap()
+        searchScreen.searchBar.typeText("Harry")
+
+        guard let value = searchScreen.searchBar.value as? String else {
+            return XCTFail("Failed to type in search bar")
+        }
+        // When: The text is reflected in the searchbar
+        XCTAssertEqual(value, "Harry")
+        
+        //Then: When the user tap on the 'Cancel' button the search view should be dismiss (button label matches)
+        XCTAssertTrue(searchScreen.label.exists)
+        searchScreen.button.tap()
+            }
 }

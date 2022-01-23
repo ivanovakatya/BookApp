@@ -9,6 +9,7 @@ import SwiftUI
 
 
 struct SearchView: View {
+    @Environment(\.isSearching) var isSearching
     @State private var searchText = ""
     
     var body: some View {
