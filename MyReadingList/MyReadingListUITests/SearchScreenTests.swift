@@ -9,9 +9,14 @@ import XCTest
 import MyReadingList
 
 class SearchScreenTests: BaseTestFile {
-    let myReadingListScreen = SearchScreen()
+    let searchScreen = SearchScreen()
     
     func testSearchableFieldForSerarchingBookWorks() {
+        //Given: User is on Search screen
+        XCTAssertTrue(searchScreen.pageTitle.exists) // title exists
+        XCTAssertTrue(searchScreen.isDisplayed()) // search field exists
+        XCTAssertEqual(searchScreen.searchBookField.label, "Search for a book") // the field machess
+
         //    Given: User is on the Search screen (assert navigation title 'Search' + search button exist)
         //    When: User taps on ‘Search for a book’ field
         //    Then: User should be able to type in the field
