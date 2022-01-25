@@ -14,9 +14,9 @@ class SearchScreenTests: BaseTestFile {
         let searchScreen = Routes.WhenUserGoesToSearchScreen()
         
         //Given: User is on Search screen (Assert all elements exist)
-        XCTAssertTrue(searchScreen.backButton.exists) // back button exsits
-        XCTAssertTrue(searchScreen.pageTitle.exists) // title exists
-        XCTAssertTrue(searchScreen.searchBookField.exists) // search field with correct text exists
+        XCTAssertTrue(searchScreen.backButton.exists)
+        XCTAssertTrue(searchScreen.pageTitle.exists)
+        XCTAssertTrue(searchScreen.searchBookField.exists)
         
         //When: User selects the search bar and types some text
         searchScreen.searchBar.tap()
@@ -46,6 +46,7 @@ class SearchScreenTests: BaseTestFile {
         
         //Then: When the user tap on the 'Cancel' button the search view should be dismiss (button label matches)
         XCTAssertTrue(searchScreen.label.exists)
+        sleep(1)
         searchScreen.button.tap()
     }
 }

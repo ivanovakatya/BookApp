@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct MyReadingListView: View {
-    
     var body: some View {
         NavigationView {
             List {
