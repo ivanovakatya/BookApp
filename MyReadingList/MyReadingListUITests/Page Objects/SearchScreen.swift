@@ -26,12 +26,12 @@ class SearchScreen: Page {
         return app.searchFields["Search for a book"].firstMatch
     }
     
-    var navbar: XCUIElement {
+    var searchbar: XCUIElement {
         return app.navigationBars.firstMatch
     }
     
     var searchBar: XCUIElement {
-        return navbar.searchFields.firstMatch
+        return searchbar.searchFields.firstMatch
     }
 
     var label: XCUIElement {

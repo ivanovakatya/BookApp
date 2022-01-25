@@ -40,6 +40,7 @@ class SearchScreenTests: BaseTestFile {
         guard let value = searchScreen.searchBar.value as? String else {
             return XCTFail("Failed to type in search bar")
         }
+        
         // When: The text is reflected in the searchbar
         XCTAssertEqual(value, "Harry")
         
