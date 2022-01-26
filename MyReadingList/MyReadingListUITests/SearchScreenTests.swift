@@ -47,6 +47,6 @@ class SearchScreenTests: BaseTestFile {
         //Then: When the user tap on the 'Cancel' button the search view should be dismiss (button label matches)
         XCTAssertTrue(searchScreen.label.exists)
         sleep(1)
-        searchScreen.button.tap()
+        searchScreen.cancelButton.tap()
     }
 }

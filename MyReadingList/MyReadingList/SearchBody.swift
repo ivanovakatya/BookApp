@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SearchBody: View {
     @Environment(\.isSearching) var isSearching
-
+    
     var body: some View {
         VStack {
             // TODO: Search Results list goes here

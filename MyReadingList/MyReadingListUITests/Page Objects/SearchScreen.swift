@@ -9,7 +9,7 @@ import XCTest
 
 class SearchScreen: Page {
     var app: XCUIApplication
-
+    
     init() {
         app = XCUIApplication()
     }
@@ -33,12 +33,12 @@ class SearchScreen: Page {
     var searchBar: XCUIElement {
         return searchbar.searchFields.firstMatch
     }
-
+    
     var label: XCUIElement {
         return app.staticTexts["Cancel"].firstMatch
     }
-
-    var button: XCUIElement {
+    
+    var cancelButton: XCUIElement {
         return app.buttons["Cancel"]
     }
 }
