@@ -9,15 +9,15 @@ import XCTest
 
 class MyReadingListScreen: Page {
     var app: XCUIApplication
-
+    
     init() {
         app = XCUIApplication()
     }
-
+    
     func isDisplayed() -> Bool {
         return addBookButton.exists
     }
-
+    
     var addBookButton: XCUIElement {
         return app.staticTexts["add-book-button"].firstMatch
     }

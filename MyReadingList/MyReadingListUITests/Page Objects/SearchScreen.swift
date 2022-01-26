@@ -9,11 +9,11 @@ import XCTest
 
 class SearchScreen: Page {
     var app: XCUIApplication
-
+    
     init() {
         app = XCUIApplication()
     }
-
+    
     var backButton: XCUIElement {
         return app.navigationBars.buttons.element(boundBy: 0)
     }
@@ -22,7 +22,23 @@ class SearchScreen: Page {
         return app.navigationBars["Search"].firstMatch
     }
     
-    var navbar: XCUIElement {
+    var searchBookField: XCUIElement {
+        return app.searchFields["Search for a book"].firstMatch
+    }
+    
+    var searchbar: XCUIElement {
         return app.navigationBars.firstMatch
+    }
+    
+    var searchBar: XCUIElement {
+        return searchbar.searchFields.firstMatch
+    }
+    
+    var label: XCUIElement {
+        return app.staticTexts["Cancel"].firstMatch
+    }
+    
+    var cancelButton: XCUIElement {
+        return app.buttons["Cancel"]
     }
 }
