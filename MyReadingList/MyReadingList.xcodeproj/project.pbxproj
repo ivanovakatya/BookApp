@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA12A9BA27A35BF900D9B98B /* MyReadingList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA12A9B827A35BF900D9B98B /* MyReadingList.xcdatamodeld */; };
 		FA332282278DD14F00D00D53 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA332281278DD14F00D00D53 /* Page.swift */; };
 		FA38ED6E279D90610053606D /* SearchBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA38ED6D279D90610053606D /* SearchBody.swift */; };
 		FA38ED74279DE4B90053606D /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA38ED73279DE4B90053606D /* Routes.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA12A9B927A35BF900D9B98B /* MyReadingList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyReadingList.xcdatamodel; sourceTree = "<group>"; };
 		FA332281278DD14F00D00D53 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		FA38ED6D279D90610053606D /* SearchBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBody.swift; sourceTree = "<group>"; };
 		FA38ED73279DE4B90053606D /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				FA38ED6D279D90610053606D /* SearchBody.swift */,
 				FAB48ED72725AEC200D52C26 /* Assets.xcassets */,
 				FAB48ED92725AEC200D52C26 /* Preview Content */,
+				FA12A9B827A35BF900D9B98B /* MyReadingList.xcdatamodeld */,
 			);
 			path = MyReadingList;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			files = (
 				FAB48ED62725AEC000D52C26 /* MyReadingListView.swift in Sources */,
 				FAB051182737230A0096651F /* SearchView.swift in Sources */,
+				FA12A9BA27A35BF900D9B98B /* MyReadingList.xcdatamodeld in Sources */,
 				FAB48ED42725AEC000D52C26 /* MyReadingListApp.swift in Sources */,
 				FA38ED6E279D90610053606D /* SearchBody.swift in Sources */,
 			);
@@ -639,6 +643,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FA12A9B827A35BF900D9B98B /* MyReadingList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FA12A9B927A35BF900D9B98B /* MyReadingList.xcdatamodel */,
+			);
+			currentVersion = FA12A9B927A35BF900D9B98B /* MyReadingList.xcdatamodel */;
+			path = MyReadingList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FAB48EC82725AEC000D52C26 /* Project object */;
 }
