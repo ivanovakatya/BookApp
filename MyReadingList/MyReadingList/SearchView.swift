@@ -10,12 +10,12 @@ import SwiftUI
 
 struct SearchView: View {
     @Environment(\.isSearching) var isSearching
-    @State private var searchText = ""
+    @State private var title = ""
     
     var body: some View {
         SearchBody()
             .navigationTitle(NSLocalizedString("ui.search.title", value: "Search", comment: "title for the Search screen"))
-            .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search for a book")
+            .searchable(text: $title, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search for a book")
     }
 }
 
