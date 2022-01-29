@@ -19,4 +19,7 @@ class CoreDataManager {
             }
         }
     }
+    func saveBook(title: String) {
+        
+    }
 }
