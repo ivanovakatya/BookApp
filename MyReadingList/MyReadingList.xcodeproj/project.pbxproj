@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FA12A9BA27A35BF900D9B98B /* MyReadingList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA12A9B827A35BF900D9B98B /* MyReadingList.xcdatamodeld */; };
+		FA12A9BC27A5381C00D9B98B /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12A9BB27A5381C00D9B98B /* CoreDataManager.swift */; };
 		FA332282278DD14F00D00D53 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA332281278DD14F00D00D53 /* Page.swift */; };
 		FA38ED6E279D90610053606D /* SearchBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA38ED6D279D90610053606D /* SearchBody.swift */; };
 		FA38ED74279DE4B90053606D /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA38ED73279DE4B90053606D /* Routes.swift */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		FA12A9B927A35BF900D9B98B /* MyReadingList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyReadingList.xcdatamodel; sourceTree = "<group>"; };
+		FA12A9BB27A5381C00D9B98B /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		FA332281278DD14F00D00D53 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		FA38ED6D279D90610053606D /* SearchBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBody.swift; sourceTree = "<group>"; };
 		FA38ED73279DE4B90053606D /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				FAB48ED72725AEC200D52C26 /* Assets.xcassets */,
 				FAB48ED92725AEC200D52C26 /* Preview Content */,
 				FA12A9B827A35BF900D9B98B /* MyReadingList.xcdatamodeld */,
+				FA12A9BB27A5381C00D9B98B /* CoreDataManager.swift */,
 			);
 			path = MyReadingList;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA12A9BC27A5381C00D9B98B /* CoreDataManager.swift in Sources */,
 				FAB48ED62725AEC000D52C26 /* MyReadingListView.swift in Sources */,
 				FAB051182737230A0096651F /* SearchView.swift in Sources */,
 				FA12A9BA27A35BF900D9B98B /* MyReadingList.xcdatamodeld in Sources */,
