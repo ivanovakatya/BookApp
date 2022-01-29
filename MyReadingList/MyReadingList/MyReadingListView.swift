@@ -12,7 +12,7 @@ struct MyReadingListView: View {
         NavigationView {
             List {
                 NavigationLink {
-                    SearchView()
+                    SearchView(coreDataManager: CoreDataManager())
                 } label: {
                     Text(NSLocalizedString("ui.myReadingList.addABook.button", value: "Add a book", comment: "Add a Book button in MyReadingList screen"))
                         .accessibility(identifier: "add-book-button")

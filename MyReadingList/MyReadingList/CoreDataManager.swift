@@ -19,6 +19,16 @@ class CoreDataManager {
             }
         }
     }
+    
+    func getAllBooks() -> [Book]{
+            let fetchRequest: NSFetchRequest<Book> = Book.fetchRequest()
+            do{
+                return try persistentContainer.viewContext.fetch(fetchRequest)
+            }catch {
+                return []
+            }
+        }
+        
     func saveBook(title: String) {
         let book = Book(context: persistentContainer.viewContext)
         book.title = title
