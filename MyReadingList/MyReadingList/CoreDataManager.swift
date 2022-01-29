@@ -10,4 +10,13 @@ import CoreData
 
 class CoreDataManager {
     let persistentContainer: NSPersistentContainer
+    
+    init() {
+        persistentContainer = NSPersistentContainer(name: "MyReadingList")
+        persistentContainer.loadPersistentStores { (description,error) in
+            if let error = error {
+                fatalError("Core Data Store failed \(error.localizedDescription)")
+            }
+        }
+    }
 }
