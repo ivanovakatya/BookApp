@@ -12,11 +12,6 @@ struct SearchView: View {
     @Environment(\.isSearching) var isSearching
     let coreDataManager: CoreDataManager
     @State private var title = ""
-    @State private var books: [Book] = [Book]()
-    
-    private func populateBooks() {
-        books = coreDataManager.getAllBooks()
-    }
     
     var body: some View {
         SearchBody()
@@ -24,17 +19,9 @@ struct SearchView: View {
             .searchable(text: $title, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search for a book")
         Button("Enter") {
             coreDataManager.saveBook(title: title)
-            populateBooks()
+            print("Searched book is: \(title)")
         }
-        
-        List(books,id: \.self) { book in
-            Text(book.title ?? "")
-        }
-        
         Spacer()
-            .onAppear(perform: {
-                populateBooks()
-            })
     }
 }
 
