@@ -10,9 +10,7 @@ import SwiftUI
 
 struct SearchView: View {
     @Environment(\.isSearching) var isSearching
-    let coreDataManager: CoreDataManager
     @State private var searchText = ""
-
     
     var body: some View {
         SearchBody()
@@ -20,7 +18,7 @@ struct SearchView: View {
             .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search for a book")
         // Add teporary button to be able to save and print the searched title
         Button("Enter") {
-            coreDataManager.saveBook(title: searchText)
+            CoreDataManager().saveBook(title: searchText)
             print("Searched book is: \(searchText)")
         }.foregroundColor(Color.red)
         Spacer()
@@ -29,6 +27,6 @@ struct SearchView: View {
 
 struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
-        SearchView(coreDataManager: CoreDataManager())
+        SearchView()
     }
 }

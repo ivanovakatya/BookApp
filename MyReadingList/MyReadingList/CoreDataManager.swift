@@ -23,9 +23,9 @@ class CoreDataManager {
     func saveBook(title: String) {
         let book = Book(context: persistentContainer.viewContext)
         book.title = title
-        do{
+        do {
             try persistentContainer.viewContext.save()
-        }catch {
+        } catch {
             print("Fail to save the book\(error)")
         }
     }
