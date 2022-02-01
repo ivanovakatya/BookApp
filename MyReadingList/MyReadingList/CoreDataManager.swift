@@ -8,7 +8,7 @@
 import Foundation
 import CoreData
 
-// code to simlate error with the search of a book
+// code to simlate error. If saving of the CoreData gets wrong
 enum SaveBookError: Error {
     case databaseError
 }
