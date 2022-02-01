@@ -8,11 +8,6 @@
 import Foundation
 import CoreData
 
-// code to simlate error. If saving of the CoreData gets wrong
-enum SaveBookError: Error {
-    case databaseError
-}
-
 class CoreDataManager {
     let persistentContainer: NSPersistentContainer
     
@@ -23,12 +18,5 @@ class CoreDataManager {
                 fatalError("Core Data Store failed \(error.localizedDescription)")
             }
         }
-    }
-    
-    func saveBook(title: String) throws {
-        let book = Book(context: persistentContainer.viewContext)
-        book.title = title
-        //throw SaveBookError.databaseError // call for the error code
-        try persistentContainer.viewContext.save()
     }
 }
