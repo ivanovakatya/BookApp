@@ -1,0 +1,19 @@
+[
+    {
+        "id" : "C8B046E9-70F5-40D4-B19A-40B3E0E0877B",
+        "imageLinks": "asd",
+        "pageCount": 365,
+        "title" : "Harry Potter",
+        "subtitle" : "Example one subtitle",
+        "description": "Description"
+    },
+    {
+        "id" : "B0E4F130-A2E5-465E-98CE-977B56F21179",
+        "imageLinks": "asd",
+        "pageCount": 365,
+        "title" : "Harry Potter",
+        "subtitle" : "Example one subtitle",
+        "description": "Description"
+    }
+]
+
