@@ -1,0 +1,24 @@
+[
+    {
+        "id" : "C8B046E9-70F5-40D4-B19A-40B3E0E0877B",
+        "title" : "Harry Potter",
+        "subtitle" : "Example one subtitle",
+        "authors": [],
+        "description": "Description",
+        "image": "",
+        "publishedDate": "",
+        "pageCount": 365,
+        "previewLink": ""
+    },
+    {
+        "id" : "B0E4F130-A2E5-465E-98CE-977B56F21179",
+        "title" : "Title",
+        "subtitle" : "Example one subtitle",
+        "authors": [],
+        "description": "Description",
+        "image": "",
+        "publishedDate": "",
+        "pageCount": 432,
+        "previewLink": ""
+    }
+]
