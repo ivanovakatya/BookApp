@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FAB48ECF2725AEC000D52C26"
-               BuildableName = "MyReadingList.app"
-               BlueprintName = "MyReadingList"
-               ReferencedContainer = "container:MyReadingList.xcodeproj">
+               BuildableName = "Bookstr.app"
+               BlueprintName = "Bookstr"
+               ReferencedContainer = "container:Bookstr.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,26 +28,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FAB48EDF2725AEC300D52C26"
-               BuildableName = "MyReadingListTests.xctest"
-               BlueprintName = "MyReadingListTests"
-               ReferencedContainer = "container:MyReadingList.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FAB48EE92725AEC300D52C26"
-               BuildableName = "MyReadingListUITests.xctest"
-               BlueprintName = "MyReadingListUITests"
-               ReferencedContainer = "container:MyReadingList.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -65,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FAB48ECF2725AEC000D52C26"
-            BuildableName = "MyReadingList.app"
-            BlueprintName = "MyReadingList"
-            ReferencedContainer = "container:MyReadingList.xcodeproj">
+            BuildableName = "Bookstr.app"
+            BlueprintName = "Bookstr"
+            ReferencedContainer = "container:Bookstr.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -82,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FAB48ECF2725AEC000D52C26"
-            BuildableName = "MyReadingList.app"
-            BlueprintName = "MyReadingList"
-            ReferencedContainer = "container:MyReadingList.xcodeproj">
+            BuildableName = "Bookstr.app"
+            BlueprintName = "Bookstr"
+            ReferencedContainer = "container:Bookstr.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
