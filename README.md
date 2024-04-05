@@ -1,4 +1,4 @@
-# Bookstr app is my Final year university project.
+# Bookstr simple iOS app.
 
 Bookstr App is a handy, user friendly iOS book app.
 
